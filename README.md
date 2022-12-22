@@ -1,10 +1,11 @@
 # brook-manager
 
 A Web UI for fully automatic management of [Brook](https://github.com/txthinking/brook)
-userFront:
+<br></br>userFront:
 ![image](https://user-images.githubusercontent.com/95649368/209111990-291fd98b-59d9-4cd9-b7b7-b3b153b94e93.png)
 
-adminFront:
+<br></br>adminFront:
+![image](https://user-images.githubusercontent.com/95649368/209113635-ff473f3b-072f-4a1c-8dc8-35b0ac6cf7da.png)
 
 
 ## Features
@@ -30,6 +31,12 @@ adminFront:
 | Automatically clear their nodes when users expire                                    | 当用户到期自动清除其节点                             |
 | It also supports adding your own manual deployment brook link and traffic Statistics | 同时也支持添加你自己手动部署的 brook link 和流量统计 |
 | ...                                                                                  | ...                                                  |
+
+## before everything It is recommended to increase the maximum buffer size by running:
+```
+sysctl -w net.core.rmem_max=2500000
+```
+This command would increase the maximum receive buffer size to roughly 2.5 MB.
 
 ## Install [nami](https://github.com/txthinking/nami)
 
